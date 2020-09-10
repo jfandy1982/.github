@@ -7,6 +7,9 @@ assignees: ''
 
 ---
 
+**Prerequisite**
+- [ ] Checked that your issue isn't already filed here: <https://github.com/search?q=is%3Aissue+user%3Ajfandy1982>
+
 **Describe the bug**
 A clear and concise description of what the bug is.
 
