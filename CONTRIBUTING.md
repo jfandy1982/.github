@@ -7,8 +7,7 @@ Check out the [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) file to learn about the v
 ## How can I contribute
 
 There are various ways to contribute to this repository. One important way are the issues, which 
-are enabled for this repository. Use the prepared issue type chooser 
-[here](https://github.com/jfandy1982/emby-data-check-ui-angular-material/issues/new/choose) for creating
+are enabled for this repository. Use the prepared issue type chooser of the corresponding repository to create
 new issues. The usage of the prepared issue templates is mandatory to have at least a small control about the 
 content.
 
