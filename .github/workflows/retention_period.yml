@@ -1,4 +1,4 @@
-name: Garbage Collection
+name: Garbage Collection (Reusable)
 
 on:
   workflow_dispatch:
