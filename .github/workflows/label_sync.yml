@@ -19,13 +19,21 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           fetch-depth: 0
 
-      - uses: micnncim/action-label-syncer@v1
+      - uses: micnncim/action-label-syncer@v1.3.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           manifest: .github/labels.yml
 
   label-sync-remote:
+    strategy:
+      fail-fast: false
+
+      matrix:
+        repo:
+          - jfandy1982/vagrant-test-boxes
+          - jfandy1982/webstation
+
     runs-on: ubuntu-latest
 
     steps:
@@ -34,11 +42,10 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           fetch-depth: 0
 
-      - uses: micnncim/action-label-syncer@v1
+      - uses: micnncim/action-label-syncer@v1.3.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           manifest: .github/labels.yml
-          repository: |
-            jfandy1982/vagrant-test-boxes
+          repository: ${{ matrix.repo }}
           token: ${{ secrets.PERSONAL_TOKEN }}
