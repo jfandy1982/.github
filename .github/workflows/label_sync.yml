@@ -24,4 +24,5 @@ jobs:
           manifest: .github/labels.yml
           repository: |
               jfandy1982/vagrant-test-boxes
-          token: ${{ secrets.TEST_PAT }}
+          token: ${{ secrets.PERSONAL_TOKEN }}
+          prune: false
