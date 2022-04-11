@@ -34,6 +34,3 @@
 - name: javascript
   description: Pull requests that update Javascript code
   color: 168700
-- name: test_local
-  description: Does the local distribution work?
-  color: ffff00
