@@ -31,6 +31,15 @@ jobs:
 
       matrix:
         repo:
+          - jfandy1982/dotfiles
+          - jfandy1982/dotfiles-private
+          - jfandy1982/education
+          - jfandy1982/emby-data-check-backend
+          - jfandy1982/emby-data-check-ui-angular-bootstrap
+          - jfandy1982/emby-data-check-ui-angular-material
+          - jfandy1982/emby-rest-api-data-sim
+          - jfandy1982/find-duplicates
+          - jfandy1982/jfandy1982
           - jfandy1982/test-connection
           - jfandy1982/vagrant-test-boxes
           - jfandy1982/webstation
