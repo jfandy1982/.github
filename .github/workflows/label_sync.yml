@@ -31,6 +31,7 @@ jobs:
 
       matrix:
         repo:
+          - jfandy1982/test-connection
           - jfandy1982/vagrant-test-boxes
           - jfandy1982/webstation
 
