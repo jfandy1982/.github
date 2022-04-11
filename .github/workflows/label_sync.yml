@@ -48,4 +48,4 @@ jobs:
         with:
           manifest: .github/labels.yml
           repository: ${{ matrix.repo }}
-          token: ${{ secrets.PERSONAL_TOKEN }}
+          token: ${{ secrets.TEST_PAT }}
