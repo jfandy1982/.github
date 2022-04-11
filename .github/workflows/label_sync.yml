@@ -23,5 +23,5 @@ jobs:
         with:
           manifest: .github/labels.yml
           repository: |
-              jfandy1982/webstation
+              jfandy1982/vagrant-test-boxes
           token: ${{ secrets.TEST_PAT }}
