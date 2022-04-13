@@ -54,9 +54,9 @@
 - name: 'code quality'
   description: Improvements, refactoring or code cleanups
   color: 6ae2bc
-- name: ':x: deprecation'
+- name: 'deprecation'
   description: Feature or some public api is made deprecated by this issue.
   color: 893636
-- name: ':bangbang: breaking changes'
+- name: 'breaking changes'
   description: Feature of some public api is made incompatible by this issue.
   color: 7c1e1e
