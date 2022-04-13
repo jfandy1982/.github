@@ -49,3 +49,14 @@
 - name: 'priority: low'
   description: Low priority and doesn't need to be rushed
   color: cfda2c
+
+# Labels inspired by https://github.com/s4u/.github/blob/master/.github/labels.yml
+- name: 'code quality'
+  description: Improvements, refactoring or code cleanups
+  color: 6ae2bc
+- name: ':x: deprecation'
+  description: Feature or some public api is made deprecated by this issue.
+  color: 893636
+- name: ':bangbang: breaking changes'
+  description: Feature of some public api is made incompatible by this issue.
+  color: ff4444
