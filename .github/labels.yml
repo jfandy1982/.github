@@ -34,6 +34,9 @@
 - name: javascript
   description: Pull requests that update Javascript code
   color: 168700
+- name: 'awaiting triage'
+  description: Check and prepare for development
+  color: c0c0c0
 
 # Labels inspired by https://opensource.creativecommons.org/contributing-code/repo-labels/
 # Group: Priority
