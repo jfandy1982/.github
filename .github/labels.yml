@@ -59,4 +59,4 @@
   color: 893636
 - name: ':bangbang: breaking changes'
   description: Feature of some public api is made incompatible by this issue.
-  color: ff4444
+  color: 7c1e1e
