@@ -34,6 +34,7 @@ jobs:
           - jfandy1982/dotfiles
           - jfandy1982/dotfiles-private
           - jfandy1982/education
+          - jfandy1982/emby-data-check
           - jfandy1982/emby-data-check-backend
           - jfandy1982/emby-data-check-ui-angular-bootstrap
           - jfandy1982/emby-data-check-ui-angular-material
