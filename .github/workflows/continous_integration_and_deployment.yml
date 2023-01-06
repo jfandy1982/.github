@@ -24,7 +24,7 @@ jobs:
 
       - name: Execute checks in 'MegaLinter'
         id: ml
-        uses: megalinter/megalinter/flavors/javascript@v5
+        uses: megalinter/megalinter/flavors/javascript@v6
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
