@@ -39,6 +39,24 @@
   color: c0c0c0
 
 # Labels inspired by https://opensource.creativecommons.org/contributing-code/repo-labels/
+# Group: Aspect
+- name: 'aspect:repo'
+  description: Concerns the health of the repository (e.g. assets, documentation etc.)
+  color: 04338c
+  emoji: '📄'
+- name: 'aspect:api'
+  description: Concerns the API layer (or backend) of the software
+  color: 04338c
+  emoji: '💻'
+- name: 'aspect:dx'
+  description: Concerns developers' experience with the codebase
+  color: 04338c
+  emoji: '🤖'
+- name: 'aspect:ui'
+  description: Concerns end-users' experience with the software
+  color: 04338c
+  emoji: '🕹'
+
 # Group: Priority
 - name: 'priority: critical'
   description: Must be fixed ASAP
