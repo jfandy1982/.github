@@ -1,6 +1,9 @@
 name: Garbage Collection
 
 on:
+  schedule:
+    - cron: '08 19 * * 1'
+
   workflow_dispatch:
     inputs:
       days:
