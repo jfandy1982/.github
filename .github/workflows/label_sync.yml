@@ -41,7 +41,6 @@ jobs:
           - jfandy1982/pipeline-playground
           - jfandy1982/test-connection
           - jfandy1982/vagrant-test-boxes
-          - jfandy1982/webstation
 
     runs-on: ubuntu-latest
 
