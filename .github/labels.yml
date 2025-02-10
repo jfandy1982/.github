@@ -81,3 +81,8 @@
 - name: 'breaking changes'
   description: Feature of some public api is made incompatible by this issue.
   color: 7c1e1e
+
+# Labels inspired by 'thinking on my own'
+- name: 'deployment'
+  description: The workflow run attempts to deploy the software artifact.
+  color: a2ee88
