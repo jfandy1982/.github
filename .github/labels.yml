@@ -1,7 +1,7 @@
 # default labels provided by Github Platform
 - name: bug
   description: Something isn't working
-  color: d73a4a
+  color: d73a70
 - name: documentation
   description: Improvements or additions to documentation
   color: 0075ca
@@ -9,7 +9,7 @@
   description: This issue or pull request already exists
   color: cfd3d7
 - name: enhancement
-  description: New feature or request
+  description: New feature or improvement to existing functionality
   color: a2eeef
 - name: good first issue
   description: Good for newcomers
@@ -31,9 +31,6 @@
 - name: dependencies
   description: Pull requests that update a dependency file
   color: d4c5f9
-- name: javascript
-  description: Pull requests that update Javascript code
-  color: 168700
 - name: 'awaiting triage'
   description: Check and prepare for development
   color: c0c0c0
@@ -86,3 +83,6 @@
 - name: 'deployment'
   description: The workflow run attempts to deploy the software artifact.
   color: a2ee88
+- name: fix
+  description: Fix something, which isn't working as expected.
+  color: d73a4a  
