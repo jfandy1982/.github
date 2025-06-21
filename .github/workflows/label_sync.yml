@@ -36,6 +36,7 @@ jobs:
       matrix:
         repo:
           - jfandy1982/action-nx-affected-projects-and-deps
+          - jfandy1982/action-affected-shas
           - jfandy1982/dotfiles
           - jfandy1982/dotfiles-private
           - jfandy1982/education
