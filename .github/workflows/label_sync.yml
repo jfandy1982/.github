@@ -1,0 +1,52 @@
+name: Distribute labels
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/labels.yml
+      - .github/workflows/label_sync.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  get-repos:
+    runs-on: ubuntu-latest
+    outputs:
+      repos: ${{ steps.list.outputs.repos }}
+
+    steps:
+      - id: list
+        run: |
+          repos=$(gh repo list jfandy1982 --json nameWithOwner \
+            --jq '[.[].nameWithOwner]')
+          echo "repos=$repos" >> $GITHUB_OUTPUT
+        env:
+          GH_TOKEN: ${{ secrets.SYNC_LABELS }}
+
+  label-sync:
+    needs: get-repos
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        repo: ${{ fromJson(needs.get-repos.outputs.repos) }}
+
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd #v6.0.2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - uses: brpaz/action-label-syncer@32e516ae73bbf7c7c0548897be07080795336e15 #v0.2.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          manifest: .github/labels.yml
+          prune: true
+          repository: ${{ matrix.repo }}
+          token: ${{ secrets.SYNC_LABELS }}
