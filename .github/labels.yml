@@ -35,7 +35,7 @@
 
 - name: 'type: chore'
   description: Maintenance tasks, housekeeping, no production code change
-  color: b0b0b0s
+  color: b0b0b0
 
 # =========================
 # ASPECT
