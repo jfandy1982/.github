@@ -1,109 +1,109 @@
 # =========================
 # TYPE
 # =========================
-- name: '🐛 type: bug'
+- name: 'type: bug'
   description: Something isn't working
   color: d73a4a
 
-- name: '✨ type: enhancement'
+- name: 'type: enhancement'
   description: New feature or improvement to existing functionality
   color: a2eeef
 
-- name: '♻️ type: refactor'
+- name: 'type: refactor'
   description: Code improvements without changing functionality
   color: 6ae2bc
 
-- name: '📄 type: documentation'
+- name: 'type: documentation'
   description: Improvements or additions to documentation
   color: 0075ca
 
-- name: '🔥 type: breaking-change'
+- name: 'type: breaking-change'
   description: Introduces incompatible API changes
   color: 7c1e1e
 
-- name: '⚠️ type: deprecation'
+- name: 'type: deprecation'
   description: Marks functionality as deprecated
   color: 893636
 
-- name: '📦 type: dependencies'
+- name: 'type: dependencies'
   description: Pull requests that update dependencies
   color: d4c5f9
 
-- name: '🚀 type: deployment'
+- name: 'type: deployment'
   description: The workflow run attempts to deploy the software artifact.
   color: a2ee88
 
 # =========================
 # ASPECT
 # =========================
-- name: '📄 aspect: repo'
+- name: 'aspect: repo'
   description: Repository health, structure, or configuration
   color: 04338c
 
-- name: '💻 aspect: api'
+- name: 'aspect: api'
   description: Backend or API layer
   color: 04338c
 
-- name: '🤖 aspect: dx'
+- name: 'aspect: dx'
   description: Developer experience and tooling
   color: 04338c
 
-- name: '🕹 aspect: ui'
+- name: 'aspect: ui'
   description: User interface and experience
   color: 04338c
 
 # =========================
 # PRIORITY / URGENCY
 # =========================
-- name: '🔴 priority: critical'
+- name: 'priority: critical'
   description: Must be fixed ASAP
   color: b60205
 
-- name: '🟠 priority: high'
+- name: 'priority: high'
   description: Blocks progress or important workflows
   color: ff9f1c
 
-- name: '🟡 priority: medium'
+- name: 'priority: medium'
   description: Should be addressed soon
   color: ffcc00
 
-- name: '🟢 priority: low'
+- name: 'priority: low'
   description: Nice to have, not urgent
   color: cfda2c
 
 # =========================
 # STATUS (Workflow)
 # =========================
-- name: '⏳ status: awaiting-triage'
+- name: 'status: awaiting-triage'
   description: Needs initial review and classification
   color: c0c0c0
 
 # =========================
 # COMMUNITY / CONTRIBUTION
 # =========================
-- name: '🤝 help wanted'
+- name: 'help wanted'
   description: Extra attention is needed
   color: 008672
 
-- name: '🧩 good first issue'
+- name: 'good first issue'
   description: Good for newcomers
   color: 7057ff
 
 # =========================
 # CLEANUP / INVALID STATES
 # =========================
-- name: '❌ invalid'
+- name: 'invalid'
   description: This doesn't seem right
   color: e4e669
 
-- name: '📌 duplicate'
+- name: 'duplicate'
   description: This issue or pull request already exists
   color: cfd3d7
 
-- name: '🙅 wontfix'
+- name: 'wontfix'
   description: This will not be worked on
   color: ffffff
 
-- name: '❓ question'
+- name: 'question'
   description: Further information is requested
   color: d876e3
