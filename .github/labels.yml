@@ -30,7 +30,7 @@
   color: d4c5f9
 
 - name: 'type: deployment'
-  description: The workflow run attempts to deploy the software artifact.
+  description: The workflow run attempts to deploy the software artifact
   color: a2ee88
 
 - name: 'type: chore'
