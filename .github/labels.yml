@@ -1,9 +1,33 @@
 # =========================
 # TYPE
 # =========================
+- name: 'type: breaking-change'
+  description: Introduces incompatible API changes
+  color: 7c1e1e
+
 - name: 'type: bug'
   description: Something isn't working
   color: d73a4a
+
+- name: 'type: chore'
+  description: Maintenance tasks, housekeeping, no production code change
+  color: b0b0b0
+
+- name: 'type: dependencies'
+  description: Pull requests that update dependencies
+  color: d4c5f9
+
+- name: 'type: deprecation'
+  description: Marks functionality as deprecated
+  color: 893636
+
+- name: 'type: deployment'
+  description: The workflow run attempts to deploy the software artifact
+  color: a2ee88
+
+- name: 'type: documentation'
+  description: Improvements or additions to documentation
+  color: 0075ca
 
 - name: 'type: enhancement'
   description: New feature or improvement to existing functionality
@@ -13,43 +37,19 @@
   description: Code improvements without changing functionality
   color: 6ae2bc
 
-- name: 'type: documentation'
-  description: Improvements or additions to documentation
-  color: 0075ca
-
-- name: 'type: breaking-change'
-  description: Introduces incompatible API changes
-  color: 7c1e1e
-
-- name: 'type: deprecation'
-  description: Marks functionality as deprecated
-  color: 893636
-
-- name: 'type: dependencies'
-  description: Pull requests that update dependencies
-  color: d4c5f9
-
-- name: 'type: deployment'
-  description: The workflow run attempts to deploy the software artifact
-  color: a2ee88
-
-- name: 'type: chore'
-  description: Maintenance tasks, housekeeping, no production code change
-  color: b0b0b0
-
 # =========================
 # ASPECT
 # =========================
-- name: 'aspect: repo'
-  description: Repository health, structure, or configuration
-  color: 04338c
-
 - name: 'aspect: api'
   description: Backend or API layer
   color: 04338c
 
 - name: 'aspect: dx'
   description: Developer experience and tooling
+  color: 04338c
+
+- name: 'aspect: repo'
+  description: Repository health, structure, or configuration
   color: 04338c
 
 - name: 'aspect: ui'
@@ -82,14 +82,6 @@
   description: Needs initial review and classification
   color: c0c0c0
 
-- name: 'status: needs-info'
-  description: Further information is requested
-  color: 89cff0
-
-- name: 'status: wontfix'
-  description: This will not be worked on
-  color: ffffff
-
 - name: 'status: duplicate'
   description: This issue or pull request already exists
   color: f4f4f4
@@ -97,6 +89,14 @@
 - name: 'status: invalid'
   description: This doesn't seem right
   color: f2f2f2
+
+- name: 'status: needs-info'
+  description: Further information is requested
+  color: 89cff0
+
+- name: 'status: wontfix'
+  description: This will not be worked on
+  color: ffffff
 
 # =========================
 # COMMUNITY / CONTRIBUTION
