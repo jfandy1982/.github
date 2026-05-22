@@ -82,6 +82,22 @@
   description: Needs initial review and classification
   color: c0c0c0
 
+- name: 'status: needs-info'
+  description: Further information is requested
+  color: 89cff0
+
+- name: 'status: wontfix'
+  description: This will not be worked on
+  color: ffffff
+
+- name: 'status: duplicate'
+  description: This issue or pull request already exists
+  color: f4f4f4
+
+- name: 'status: invalid'
+  description: This doesn't seem right
+  color: f2f2f2
+
 # =========================
 # COMMUNITY / CONTRIBUTION
 # =========================
@@ -92,22 +108,3 @@
 - name: 'good first issue'
   description: Good for newcomers
   color: 7057ff
-
-# =========================
-# CLEANUP / INVALID STATES
-# =========================
-- name: 'invalid'
-  description: This doesn't seem right
-  color: e4e669
-
-- name: 'duplicate'
-  description: This issue or pull request already exists
-  color: cfd3d7
-
-- name: 'wontfix'
-  description: This will not be worked on
-  color: ffffff
-
-- name: 'question'
-  description: Further information is requested
-  color: d876e3
