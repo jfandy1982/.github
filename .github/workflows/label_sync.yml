@@ -9,10 +9,6 @@ on:
       - .github/workflows/label_sync.yml
   workflow_dispatch:
 
-permissions:
-  contents: read
-  issues: write
-
 jobs:
   get-repos:
     runs-on: ubuntu-latest
@@ -30,6 +26,11 @@ jobs:
   label-sync:
     needs: get-repos
     runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+      issues: write
+
     strategy:
       fail-fast: false
       matrix:
