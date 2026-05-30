@@ -22,9 +22,8 @@ jobs:
     steps:
       - id: list
         run: |
-          repos=$(gh repo list jfandy1982 --json nameWithOwner \
-            --jq '[.[].nameWithOwner]')
-          echo "repos=$repos" >> $GITHUB_OUTPUT
+          repos=$(gh repo list jfandy1982 --json nameWithOwner --jq '[.[].nameWithOwner]')
+          echo "repos=$repos" >> "$GITHUB_OUTPUT"
         env:
           GH_TOKEN: ${{ secrets.SYNC_LABELS }}
 
