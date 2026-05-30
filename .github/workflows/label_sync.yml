@@ -9,10 +9,6 @@ on:
       - .github/workflows/label_sync.yml
   workflow_dispatch:
 
-permissions:
-  contents: read
-  issues: write
-
 jobs:
   get-repos:
     runs-on: ubuntu-latest
@@ -22,15 +18,19 @@ jobs:
     steps:
       - id: list
         run: |
-          repos=$(gh repo list jfandy1982 --json nameWithOwner \
-            --jq '[.[].nameWithOwner]')
-          echo "repos=$repos" >> $GITHUB_OUTPUT
+          repos=$(gh repo list jfandy1982 --json nameWithOwner --jq '[.[].nameWithOwner]')
+          echo "repos=$repos" >> "$GITHUB_OUTPUT"
         env:
           GH_TOKEN: ${{ secrets.SYNC_LABELS }}
 
   label-sync:
     needs: get-repos
     runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+      issues: write
+
     strategy:
       fail-fast: false
       matrix:

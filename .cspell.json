@@ -19,6 +19,6 @@
   "import": ["@cspell/dict-de-de/cspell-ext.json"],
   "loadDefaultConfiguration": true,
   "useGitignore": true,
-  "ignoreWords": ["bangbang", "brpaz", "cfda", "dotclaude", "eeef", "ffcc", "jfandy1982", "Mattraks", "sdlc", "syncer"],
+  "ignoreWords": ["actionlint", "bangbang", "brpaz", "cfda", "dotclaude", "eeef", "ffcc", "jfandy1982", "Mattraks", "sdlc", "syncer"],
   "words": []
 }
