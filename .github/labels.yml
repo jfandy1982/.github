@@ -94,6 +94,14 @@
   description: Further information is requested
   color: 89cff0
 
+- name: 'status: pinned'
+  description: Exempt from stale/triage automation, never auto-closed
+  color: 0e8a16
+
+- name: 'status: stale'
+  description: No recent activity, candidate for closing
+  color: f6f6f6
+
 - name: 'status: wontfix'
   description: This will not be worked on
   color: ffffff
