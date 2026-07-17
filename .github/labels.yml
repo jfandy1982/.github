@@ -78,6 +78,10 @@
 # =========================
 # STATUS (Workflow)
 # =========================
+- name: 'status: automerge'
+  description: Automatically merged once checks pass (e.g. Renovate)
+  color: 0e8a16
+
 - name: 'status: awaiting-triage'
   description: Needs initial review and classification
   color: c0c0c0

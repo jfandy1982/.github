@@ -2,7 +2,19 @@
   "$schema": "https://docs.renovatebot.com/renovate-inherited-schema.json",
   "extends": ["config:recommended"],
   "dependencyDashboard": true,
-  "labels": ["dependencies"],
+  "labels": ["type: dependencies"],
   "prCreation": "manual",
-  "automerge": false
+  "automerge": false,
+  "packageRules": [
+    {
+      "matchPackageNames": ["prettier"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "prCreation": "immediate",
+      "automerge": true,
+      "automergeType": "branch",
+      "minimumReleaseAge": "3 days",
+      "commitMessagePrefix": "chore:",
+      "labels": ["status: automerge"]
+    }
+  ]
 }
