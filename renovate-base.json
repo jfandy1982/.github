@@ -5,6 +5,7 @@
   "labels": ["type: dependencies"],
   "prCreation": "manual",
   "automerge": false,
+  "schedule": ["after 5am and before 5pm on Friday"],
   "packageRules": [
     {
       "matchPackageNames": ["prettier"],
