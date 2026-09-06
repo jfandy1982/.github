@@ -8,7 +8,16 @@
   "schedule": ["after 5am and before 5pm on Friday"],
   "packageRules": [
     {
-      "matchPackageNames": ["prettier"],
+      "matchPackageNames": [
+        "@commitlint/cli",
+        "@commitlint/config-conventional",
+        "@cspell/dict-de-de",
+        "cspell",
+        "husky",
+        "js-yaml",
+        "lint-staged",
+        "prettier"
+      ],
       "matchUpdateTypes": ["minor", "patch"],
       "prCreation": "immediate",
       "automerge": true,
