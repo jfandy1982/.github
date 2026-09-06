@@ -12,6 +12,7 @@ on:
 jobs:
   get-repos:
     runs-on: ubuntu-latest
+    permissions: {}
     outputs:
       repos: ${{ steps.list.outputs.repos }}
 
