@@ -22,6 +22,14 @@ The nested `.github/` structure is intentional: GitHub reads community health fi
 - Renovate: `renovate.json` in `.github/` is the repository-specific Renovate entry point; the `schedule` override there is intentional
 - pre-commit hook runs `lint-staged` (Prettier + cspell) on `*.json`, `*.md`, `*.yml`; additionally runs `js-yaml` syntax validation on `*.yml`, `*.yaml`
 
+### PR merge checklist
+
+<!-- heading name is referenced by the create-pr skill — do not rename -->
+
+| File pattern | Checklist item |
+| --- | --- |
+| `.github/labels.yml`, `.github/workflows/label_sync.yml` | `secrets.SYNC_LABELS` PAT is still valid |
+
 ### Commands
 
 These NPM scripts can be used beside pre-commit-hooks to enforce proper spelling and formatting.

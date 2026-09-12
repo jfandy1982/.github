@@ -44,12 +44,28 @@
   description: Backend or API layer
   color: 04338c
 
+- name: 'aspect: data'
+  description: Data models, schema, migrations, storage
+  color: 04338c
+
 - name: 'aspect: dx'
   description: Developer experience and tooling
   color: 04338c
 
+- name: 'aspect: infrastructure'
+  description: Hosting, cloud resources, networking
+  color: 04338c
+
+- name: 'aspect: observability'
+  description: Logging, monitoring, tracing
+  color: 04338c
+
 - name: 'aspect: repo'
   description: Repository health, structure, or configuration
+  color: 04338c
+
+- name: 'aspect: security'
+  description: Auth, secrets, permissions, vulnerabilities
   color: 04338c
 
 - name: 'aspect: ui'
