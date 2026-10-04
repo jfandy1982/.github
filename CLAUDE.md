@@ -19,7 +19,7 @@ The nested `.github/` structure is intentional: GitHub reads community health fi
 ## Tooling
 
 - GitHub Actions SHAs are manually verified and pinned — do not flag pinned SHAs as outdated without checking first
-- Renovate: `renovate.json` in `.github/` is the repository-specific Renovate entry point; the `schedule` override there is intentional
+- Renovate: `renovate.json` in `.github/` is the repository-specific Renovate entry point
 - pre-commit hook runs `lint-staged` (Prettier + cspell) on `*.json`, `*.md`, `*.yml`; additionally runs `js-yaml` syntax validation on `*.yml`, `*.yaml`
 
 ### PR merge checklist
