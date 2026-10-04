@@ -24,7 +24,7 @@
       "automergeType": "branch",
       "minimumReleaseAge": "3 days",
       "commitMessagePrefix": "chore:",
-      "labels": ["status: automerge"]
+      "labels": ["status: automerge", "type: dependencies"]
     }
   ]
 }
